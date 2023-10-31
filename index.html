@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>P.I.RECORDS — COMING SOON</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 90vh;
+        }
+        @media (max-width: 600px) {
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="main-image" src="PIRecords-placeholder-graphic.svg" alt="Placeholder Graphic" onclick="switchImage()" />
+
+    <script>
+        function switchImage() {
+            const image = document.getElementById("main-image");
+            if (image.src.endsWith("PIRecords-placeholder-graphic.svg")) {
+                image.src = "PIRecords-tyson.jpg";
+            } else {
+                image.src = "PIRecords-placeholder-graphic.svg";
+            }
+        }
+    </script>
+</body>
+</html>
+
